@@ -37,10 +37,58 @@
             <div class="form-group col-sm-6">
               <label for="train-number">Train #</label>
               <input type="number" class="form-control" id="train-number" min="1" max="999" placeholder="12345" required/>
-              <div class="invalid-feedback">
+            <div class="invalid-feedback">
                 Please provide a Train #.
-              </div>
-            </div>
+        </div>
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="train-line">Line</label>
+          <input type="text" class="form-control" id="train-line" maxlength=20 placeholder="Express" required/>
+          <div class="invalid-feedback">
+            Please provide a Train Line.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="train-destination">Destination</label>
+        <input type="text" class="form-control" id="train-destination" maxlength=12 placeholder="City or Station Name" required/>
+        <div class="invalid-feedback">
+            Please provide a Destination.
+          </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-sm-4">
+          <label for="train-departure">First Departure (24hr format)</label>
+          <input type="number" class="form-control" id="train-departure" placeholder="0800" required/>
+          <div class="invalid-feedback">
+            Please provide a Train's First Departure Time.
+          </div>
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="train-frequency">Frequency (minutes)</label>
+          <input type="number" class="form-control" id="train-frequency" min="10" max="720" placeholder="30" required/>
+          <div class="invalid-feedback">
+            Please provide a Train Frequency.
+          </div>
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="train-platform">Platform</label>
+          <input type="text" class="form-control" id="train-platform" maxlength=2 placeholder="2a" required/>
+          <div class="invalid-feedback">
+            Please provide a Platform.
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn button-add">Add Train</button>
+    </form>
+    
+</div>
+
+
+</div>
+
+
+</div>
 
 
 
